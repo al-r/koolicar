@@ -405,6 +405,7 @@ ul {
 	text-align: center;
 }
 
+.ui-datepicker-prev,
 .ui-datepicker-next {
 	cursor: pointer;
 	height: 13px;
