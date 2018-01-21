@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Koolicar</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+        <!-- <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+  
+    </head>
+    <body>
+        <div id="header" role="header">
+            <div class="container">
+                <div id="logo" class="header-item">
+                    <img src="img/koolicar-logo.jpg" alt="Koolicar logo" />
+                </div>
+                <ul id="nav" class="nomob header-item" role="navigation">
+                    <li><a href="#">Inscription</a></li>
+                    <li><a href="#">Connexion</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li class="button">
+                        <button type="button">Inscrire mon véhicule</button>
+                    </li>
+                </ul>
+                <img src="img/menu-icon.jpg" id="nav-mob" class="mob" alt="Menu" />
+            </div> <!-- .container -->
+        </div> <!-- #header -->
+
+        <div id="main-content">
+            <div class="container">
+                <h1>Locations</h1>
+
+                <div id="sub-heading">
+                    <div id="total" class="sub-heading-item">
+                        <h2>123,34€</h2>
+                        <a href="#" target="_blank">Retirer mon argent</a>
+                    </div>
+                    <form id="filters" class="sub-heading-item">
+                        <div class="datepicker">
+                            <img src="img/datepicker-icon.jpg" width="15" height="15" alt="Datepicker for start date" />
+                            <input type="text" id="start-date" placeholder="dd/mm">
+                        </div>
+                        <div class="datepicker">
+                            <img src="img/datepicker-icon.jpg" width="15" height="15" alt="Datepicker for end date" />
+                            <input type="text" id="end-date" placeholder="dd/mm">
+                        </div>
+                        <button type="submit" class="button-filter">Filtrer</button>
+                    </form>
+                </div> <!-- #sub-heading -->
+
+                <ul id="list" class="list" role="list">
+                    <li class="list-item list-item-heading">
+                        <div class="list-item-col">
+                            <h3>Véhicule</h3>
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Début</h3>
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Fin</h3>
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Distance</h3>
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Durée</h3>
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Statut</h3>
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Montant</h3>
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Reçu</h3>
+                        </div>
+                    </li>
+
+                    <li class="list-item">
+                        <h3 class="list-item-col">
+                            Renault Trafic
+                        </h3>
+                        <div class="list-item-col">
+                            <h3>Début : </h3>
+                            22 Sept. 10h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Fin : </h3>
+                            23 Sept. 12h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Distance : </h3>
+                            145km
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Durée : </h3>
+                            15h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Statut : </h3>
+                            Terminée
+                            <span class="nomob text-green">Réduction</span>
+                            <span class="nomob text-pink">Total</span>
+                        </div>
+                        <div class="list-item-col">
+                            <span class="montant"><h3>Montant : </h3>123,45€</span>
+                            <span class="montant"><h3 class="text-green">Réduction : </h3>20€</span>
+                            <span class="montant"><h3 class="text-pink">Total : </h3>103,45€</span>
+                        </div>
+                        <div class="list-item-col">
+                            <a href="#" download>Télécharger<span class="mob"> un reçu</span></a>
+                        </div>
+                    </li>
+
+                    <li class="list-item">
+                        <h3 class="list-item-col">
+                            Renault Trafic
+                        </h3>
+                        <div class="list-item-col">
+                            <h3>Début : </h3>
+                            22 Sept. 10h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Fin : </h3>
+                            23 Sept. 12h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Distance : </h3>
+                            145km
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Durée : </h3>
+                            15h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Statut : </h3>
+                            Terminée
+                        </div>
+                        <div class="list-item-col">
+                            <span class="montant"><h3>Montant : </h3>123,45€</span>
+                        </div>
+                        <div class="list-item-col">
+                            <a href="" download>Télécharger<span class="mob"> un reçu</span></a>
+                        </div>
+                    </li>
+
+                    <li class="list-item">
+                        <h3 class="list-item-col">
+                            Renault Trafic
+                        </h3>
+                        <div class="list-item-col">
+                            <h3>Début : </h3>
+                            22 Sept. 10h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Fin : </h3>
+                            23 Sept. 12h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Distance : </h3>
+                            145km
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Durée : </h3>
+                            15h45
+                        </div>
+                        <div class="list-item-col">
+                            <h3>Statut : </h3>
+                            Terminée
+                        </div>
+                        <div class="list-item-col">
+                            <span class="montant"><h3>Montant : </h3>123,45€</span>
+                        </div>
+                        <div class="list-item-col">
+                            <a href="#" download>Télécharger<span class="mob"> un reçu</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div> <!-- .container -->
+        </div> <!-- #main-content -->
+    </body>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</html>
